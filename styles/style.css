@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('./fonts/ballpark.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dayrom';
+    src: url('./fonts/ballpark.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    
+    background: url('/styles/images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
+    margin-top: -12px;
+    font-weight: normal;
+}
+
+
+#titre_principal{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 50px;
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover {
+    text-decoration: underline 3px;
+}
+
+#banniere_image{
+    display: flex;
+    align-items: flex-end;
+    background-image: url(./images/sanfrancisco.jpg);
+    height: 219px;
+    width: 100%;
+    min-width: 950px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+#banniere_description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.bouton_rouge {
+    background: linear-gradient(180deg, rgba(255,0,0,.8), rgba(122, 5, 7) 70.71%);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+section {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    text-align: justify;
+    width: 100%;
+    min-width: 950px;
+}
+
+article{
+    width: 65%;
+}
+
+article h1 {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+aside{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    width: 30%;
+    background-color: #6F6A63;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 10px;
+    color: white;
+    height: 400px;
+}
+
+aside h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#fleche_bulle {
+    position: absolute;
+    top: 56%;
+    left: 59.85%;
+}
+
+#photo_zozor {
+    display: flex;
+    justify-content: center;
+}
+
+.ico_categorie
+{
+   display: flex;
+   justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+}
+
+#tweet {
+    width: 30%;
+}
+
+#mes_photos {
+    width: 40%;
+}
+
+.photo img {
+    border: 1px solid;
+    margin-left: 5px;
+}
+
+#mes_amis {
+    width: 30%;
+}
+
+#mes_amis ul {
+    list-style: url('images/ico_liensexterne.png');
+    margin: 0;
+}
+
+#listes_amis{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#listes_amis a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+@media all and (max-width: 1024px) {
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+
+    nav a 
+    {
+        font-size: 1.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+
+    #banniere_image
+    {
+        display: none;
+    }
+
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    #fleche_bulle
+    {
+        display: none;
+    }
+    
+    #photo_zozor img
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+    
+    aside p:last-child
+    {
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
